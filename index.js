@@ -1,3 +1,9 @@
+const axios = require("axios");
+const GRAPHQL_API = "CHANGE TO ACTUELL API URL";
+
+const email = "test@test.com";
+let countOf429s = 0;
+
 const testRequestLimits = async () => {
   for (let i = 0; i < 200; i++) {
     try {
